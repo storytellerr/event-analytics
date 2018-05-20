@@ -1,0 +1,36 @@
+.imgg {
+  border-radius: 50%;
+  width:200px;
+}
+#container {
+  height: 210px;
+  text-align: justify;
+  /* IE 9 & 10 don't like font-size: 0; */
+  min-width: 600px;
+}
+#container div {
+  width: 200px;
+  height: 125px;
+  display: inline-block;
+}
+#container:after {
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+.createdby{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.taboption {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tablinks{
+  border: none;
+}
+.blackBox{
+  background: #000;
+  color: #ff0;
+}

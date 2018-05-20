@@ -1,0 +1,63 @@
+<div class="jumbotron text-center">
+  <h1>App analytics platform</h1>
+  <p class="lead">Welcome to our custom application analytics platform  </p>
+  <div *ngIf="!authService.loggedIn()">
+    <a class="btn btn-primary"  [routerLink]="['/register']">Register</a> <a class="btn btn-dark" [routerLink]="['/login']">Login</a>
+  </div>
+</div>
+
+<div>
+  <h3>how to use<h3>
+  <div class="jumbotron text-center">
+    <h3><b>Step1</b></h3>
+    login/register to the portal by navigating to login/register through nav-bar.
+    <h3><b>Step2</b></h3>
+    add library to your app via jet pack
+
+
+    <div class="taboption">
+    <button class="tablinks"  [style.background-color]="show ? '#ccc':'#f1f1f1'" (click)="changeTab(1)">android studio-2.*</button>
+    <button class="tablinks"  [style.background-color]="!show ? '#ccc':'#f1f1f1' " (click)="changeTab(2)" >android studio-3.*</button>
+    </div>
+
+    <div id="Tab1" class="tabcontent" *ngIf="show">
+      <div class="jumbotron text-center ">
+        1.Add it in your root build.gradle at the end of repositories:<br>
+        <img src="assets/images/app-gradle.png"  alt="Avatar"><br>
+        2.Add the dependency<br>
+        <img src="assets/images/Compile-gradle.jpg"  alt="Avatar">
+      </div>
+    </div>
+
+   <div id="Tab2" class="tabcontent" *ngIf="!show">
+     <div class="jumbotron text-center">
+       1.Add it in your root build.gradle at the end of repositories:<br>
+       <img src="assets/images/app-gradle.png"  alt="Avatar"><br>
+       <div style="">2.Add the dependency<br><div>
+        <img src="assets/images/module-gradle.png"  alt="Avatar">
+     </div>
+   </div>
+
+
+    <h3><b>Step3</b></h3>
+    Goto dashboard and show the data
+  </div>
+<div>
+
+<div>
+  <h3 style="text-align: center;">Created By</h3>
+  <div  id="container" class="createdby" >
+    <div class="row">
+      <img src="assets/images/akash.jpg" class="imgg" alt="Avatar">
+      <div style="text-align: center;"><a href="https://www.facebook.com/akashdeep.singh.944023">akash</a></div>
+    </div>
+    <div class="row">
+      <img src="assets/images/yaten.jpg" class="imgg" alt="Avatar" >
+      <div style="text-align: center;"><a href="https://www.facebook.com/yatender.yaten">yeten</a></div>
+    </div>
+    <div class="row">
+      <img src="assets/images/shashank.jpg" class="imgg" alt="Avatar" >
+      <div style="text-align: center;"><a href="https://www.facebook.com/akashdeep.singh.944023">Shashank</a></div>
+    </div>
+  </div>
+</div>
